@@ -13,7 +13,7 @@ import Moya
 struct NetworkPostRepositoryImp : PostRepositrory {
     
     func allPosts() -> Observable<[Post]> {
-        
+        // test
         let p = provider
         return p.request(.posts).map({ (response) -> [Post] in
             
